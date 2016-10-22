@@ -7,7 +7,7 @@ Windows:
 
 ```
 # Installing modules
-pip install discord
+pip install discord.py
 pip install asyncio
 pip install bs4
 
@@ -19,7 +19,7 @@ Linux:
 
 ```
 # Installing modules
-pip install discord
+pip install discord.py
 pip install asyncio
 pip install bs4
 
