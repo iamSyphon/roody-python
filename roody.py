@@ -12,8 +12,10 @@ def get_insult():
     sock = urllib.request.urlopen('http://insultgenerator.org')
     html = sock.read()
     soup = bs4.BeautifulSoup(html, 'html.parser')
-    for insult in soup.find_all('div', {'class': 'wrap'}):
-        return (insult.get_text())
+    for insult_str in soup.find_all('div', {'class': 'wrap'}):
+        insult = insult_str.get_text()
+        insult = insult.replace('\n', '').replace('\r', '')
+        return (insult)
 
 @client.event
 async def on_ready():
