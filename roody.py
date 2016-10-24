@@ -20,6 +20,7 @@ def get_insult():
 @client.event
 async def on_ready():
     print ('Logged on as: {0}'.format(client.user))
+    await client.change_status(game=discord.Game(name='Say "roody-inv" for invite link'))
 
 @client.event
 async def on_message(message):
