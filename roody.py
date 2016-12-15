@@ -28,7 +28,7 @@ async def on_message(message):
         await client.send_message(message.channel, '{0}, {1}'.format(message.author.mention, get_insult()))
 
     if "roody-inv" in message.content:
-        await client.send_message(message.author, 'What the fuck cunt? Trying to add me to your shitty server. Well here is the link cunt: https://discordapp.com/oauth2/authorize?client_id=238261917796401152&scope=bot')
+        await client.send_message(message.author, 'What the fuck? Trying to add me to your shitty server. Well here is the link: https://discordapp.com/oauth2/authorize?client_id=238261917796401152&scope=bot')
 
 
 client.run('token')
