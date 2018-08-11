@@ -9,7 +9,7 @@ import asyncio
 client = discord.Client()
 
 def get_insult():
-    sock = urllib.request.urlopen('http://insultgenerator.org')
+    sock = urllib.request.urlopen('https://insult-generator.org')
     html = sock.read()
     soup = bs4.BeautifulSoup(html, 'html.parser')
     for insult_str in soup.find_all('div', {'class': 'wrap'}):
